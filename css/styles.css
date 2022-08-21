@@ -1,12 +1,12 @@
-:root {
+/* :root {
     --text-title-color: #212121;
     --primary-text-color: #757575;
     --accent-color: #2196F3;
     --primary-background-color: #FFFFFF;
     --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-body {
+/* body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
@@ -18,20 +18,38 @@ body {
 *::before,
 *::after {
     box-sizing: border-box;
-}
+} */
 
-.container {
+
+
+/* Перевикористовується */
+/* .section {
+    background-color: var(--primary-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+} */
+
+/* .container {
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    /* outline: 1px solid #2196F3; */
-}
+} */
+
+/* .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-title-color);
+} */
 
 /* ХЕДЕР */
-.header {
+
+/* .header {
     box-sizing: border-box;
-    /* height: 80px; */
     border: 1px #ECECEC;
     background-color: #ffffff;
     border-bottom: 1px solid #EEEEEE;
@@ -69,7 +87,6 @@ body {
 
 .nav__list {
     display: flex;
-    /* margin-left: 93px; */
     list-style: none;
     text-decoration: none;
     padding: 0;
@@ -97,7 +114,6 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     transition: color var(--timing-function);
-    /* background-color: tomato; */
 
 }
 
@@ -181,10 +197,11 @@ body {
 .icon-envelope:hover,
 .icon-envelope:focus {
     fill: var(--accent-color);
-}
+} */
 
 /* ГЕРОЙ */
-.hero {
+
+/* .hero {
     background-color: #2F303A;
     margin: 0;
     padding-top: 200px;
@@ -200,11 +217,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* outline: 1px solid tomato; */
-
 }
 
-.title {
+.hero-title {
     margin-top: 0;
     margin-bottom: 30px;
     font-weight: 900;
@@ -234,12 +249,12 @@ body {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 
 
 /* МОДАЛЬНЕ ВІКНО */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -255,9 +270,9 @@ body {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
+} */
 
-.modal {
+/* .modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -265,7 +280,6 @@ body {
     padding: 40px;
 
     width: 528px;
-    /* height: 581px; */
     background-color: var(--primary-background-color);
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -277,8 +291,9 @@ body {
 .backdrop--is-hidden .modal {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3);
-}
+} */
 
+/* видалити 
 .modal-btn {
     position: absolute;
     top: 8px;
@@ -296,12 +311,14 @@ body {
     cursor: pointer;
 }
 
+
 .modal-btn:hover {
     fill: var(--accent-color);
-}
+} */
 
 /* ФОРМА+ */
-.register-form {
+
+/* .register-form {
     text-align: center;
 }
 
@@ -449,9 +466,9 @@ body {
 
 .register-form-agreement__checkbox:checked+.register-form-agreement__icon .register-form-agreement__icon-check {
     opacity: 1;
-}
+} */
 
-.register-form-btn {
+/* .register-form-btn {
     display: inline-flex;
     align-items: center;
     padding: 10px 52px;
@@ -473,19 +490,15 @@ body {
 .register-form-btn:hover,
 .register-form-btn:focus {
     background-color: #188CE8;
-}
+} */
 
 
 
 
 /* ПЕРЕВАГИ */
-.benefits {
-    background-color: var(--primary-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
-.visually-hidden {
+
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -496,7 +509,11 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
+
+/* .section--padding-bottom {
+    padding-bottom: 0;
+} */
 
 .benefits-list {
     display: flex;
@@ -505,8 +522,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    /* background-color: orange; */
-    /* margin-right: 30px; */
 }
 
 .benefits-list__item {
@@ -520,7 +535,6 @@ body {
 
 .benefits-thumb {
     display: flex;
-    /* outline: 1px solid tomato; */
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -558,23 +572,9 @@ body {
 }
 
 /* ЧИМ ЗАЙМАЄМОСЯ */
-.our-work {
-    background-color: var(--primary-background-color);
-    margin-top: 0;
-    padding-bottom: 94px;
-}
 
-.section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-title-color);
-}
 
-.our-work__list {
+.our-work-list {
     display: flex;
     list-style: none;
     margin-top: 0;
@@ -616,21 +616,10 @@ body {
 }
 
 /* КОМАНДА */
-.team {
+
+
+/* .section--gray {
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-}
-
-/* .team__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-title-color);
 } */
 
 .team-list {
@@ -726,12 +715,7 @@ body {
 }
 
 /* ПОСТІЙНІ КЛІЄНТИ */
-.clients {
-    background-color: var(--primary-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 
-}
 
 /* .clients__title {
     margin-top: 0;
@@ -975,7 +959,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscription-btn {
+/* .subscription-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -999,7 +983,7 @@ body {
     width: 24px;
     height: 24px;
     font: #FFFFFF;
-}
+} */
 
 /* ПОРТФОЛІО */
 .main {
@@ -1020,7 +1004,7 @@ body {
     margin-bottom: 50px;
 }
 
-.filter-button {
+/* .filter-button {
     background: #F5F4FA;
     color: var(--text-title-color);
     font-family: inherit;
@@ -1038,7 +1022,8 @@ body {
     transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
 }
 
-.filter-all {
+
+.filter-button--all {
     background-color: var(--accent-color);
     color: #FFFFFF;
 }
@@ -1051,7 +1036,7 @@ body {
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 
-}
+} */
 
 
 .portfolio-list {

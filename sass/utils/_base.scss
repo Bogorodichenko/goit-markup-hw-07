@@ -1,0 +1,19 @@
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    margin: 0;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// перевірити чи це працює
+.no-scroll {
+    overflow: hidden;
+}
+

@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link href="./css/main.min.css" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 
@@ -25,27 +26,27 @@
                     <span class="logo-web">Web</span>Studio
                 </a>
 
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a>
+                <ul class="nav-list">
+                    <li class="nav-list__item"><a class="nav__link" href="./index.html">Студія</a>
                     </li>
-                    <li class="nav__item"><a class="nav__link nav__link--current" href="">Портфоліо</a></li>
-                    <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+                    <li class="nav-list__item"><a class="nav__link nav__link--current" href="">Портфоліо</a></li>
+                    <li class="nav-list__item"><a class="nav__link" href="">Контакти</a></li>
                 </ul>
             </nav>
 
             <div>
-                <ul class="header__contacts">
-                    <li class="header__item">
-                        <a class="header__link" href="mailto:info@devstudio.com">
-                            <svg class="header__icon-envelope">
+                <ul class="header-contacts">
+                    <li class="header-contacts__item">
+                        <a class="header-contacts__link" href="mailto:info@devstudio.com">
+                            <svg class="header-contacts__icon-envelope">
                                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
                         </a>
                     </li>
-                    <li class="header__item">
-                        <a class="header__link" href="tel:+380961111111">
-                            <svg class="header__icon-smartphone">
+                    <li class="header-contacts__item">
+                        <a class="header-contacts__link" href="tel:+380961111111">
+                            <svg class="header-contacts__icon-smartphone">
                                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                             </svg>
                             +38 096 111 11 11
@@ -62,12 +63,12 @@
             <div class="container">
                 <ul class="filter-list">
                     <li>
-                        <button class="filter-button filter-all" type="button">Усі</button>
+                        <button class="button button--filter filter-button__all" type="button">Усі</button>
                     </li>
-                    <li><button class="filter-button" type="button">Веб-сайти</button> </li>
-                    <li><button class="filter-button" type="button">Додатки</button></li>
-                    <li><button class="filter-button" type="button">Дизайн</button></li>
-                    <li><button class="filter-button" type="button">Маркетинг</button></li>
+                    <li><button class="button button--filter" type="button">Веб-сайти</button> </li>
+                    <li><button class="button button--filter" type="button">Додатки</button></li>
+                    <li><button class="button button--filter" type="button">Дизайн</button></li>
+                    <li><button class="button button--filter" type="button">Маркетинг</button></li>
                 </ul>
 
                 <ul class="portfolio-list">
@@ -312,8 +313,8 @@
                         <label>
                             <input class="subscription__input" type="email" placeholder="E-mail">
                         </label>
-                        <button class="subscription-btn" type="submit">Підписатися
-                            <svg class="subscription-btn__icon">
+                        <button class="button button--subscription" type="submit">Підписатися
+                            <svg class="button__icon">
                                 <use href="./images/symbol-defs-all.svg#icon-send"></use>
                             </svg>
                         </button>
