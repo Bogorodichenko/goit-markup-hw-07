@@ -6,14 +6,21 @@ body {
 
 }
 
+// перевірити чи це працює
+.no-scroll {
+    overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-// перевірити чи це працює
-.no-scroll {
-    overflow: hidden;
+.main {
+    background-color: var(--primary-background-color);
 }
 
+p {
+    margin-bottom: 0;
+}
