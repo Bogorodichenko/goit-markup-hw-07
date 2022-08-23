@@ -917,6 +917,11 @@ p {
   transition: border var(--timing-function);
 }
 
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid var(--accent-color);
+}
+
 .clients__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -932,9 +937,6 @@ p {
   fill: #AFB1B8;
   -webkit-transition: fill var(--timing-function);
   transition: fill var(--timing-function);
-}
-.clients__icon:hover, .clients__icon:focus {
-  border: 1px solid var(--accent-color);
 }
 
 .clients__link:hover .clients__icon,

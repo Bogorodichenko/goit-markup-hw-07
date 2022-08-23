@@ -21,6 +21,11 @@
     transition: border var(--timing-function);
 }
 
+.clients__link:hover,
+.clients__link:focus {
+    border: 1px solid var(--accent-color);
+}
+
 .clients__icon {
     display: flex;
     align-items: center;
@@ -29,11 +34,6 @@
     height: 60px;
     fill: #AFB1B8;
     transition: fill var(--timing-function);
-
-        &:hover,
-        &:focus {
-                border: 1px solid var(--accent-color);
-            }
 }
 
 .clients__link:hover .clients__icon,
