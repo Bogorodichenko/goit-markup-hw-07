@@ -115,14 +115,26 @@
     padding-bottom: 11px;
     padding-left: 42px;
 
+    &:hover,
+    &:focus-within {
+        border-color: var(--accent-color);
+        outline: transparent;
+        transition: color var(--timing-function);
+    }
+
+    &:hover+.register-form__icon,
+    &:focus-within+.register-form__icon {
+        fill: var(--accent-color);
+        transition: fill var(--timing-function);
+        }
 }
 
-.register-form__input:hover,
-.register-form__input:focus-within {
-    border-color: var(--accent-color);
-    outline: transparent;
-    transition: color var(--timing-function);
-}
+// .register-form__input:hover,
+// .register-form__input:focus-within {
+//     border-color: var(--accent-color);
+//     outline: transparent;
+//     transition: color var(--timing-function);
+// }
 
 .register-form__icon {
     position: absolute;
@@ -133,12 +145,6 @@
     height: 18px;
 }
 
-.register-form__input:hover+.register-form__icon,
-.register-form__input:focus-within+.register-form__icon {
-    fill: var(--accent-color);
-    transition: fill var(--timing-function);
-}
-
 .register-form__comment {
     resize: none;
     height: 120px;
@@ -147,21 +153,20 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-}
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 
-.register-form__comment::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.register-form__comment:hover,
-.register-form__comment:focus-within {
-    border-color: var(--accent-color);
-    outline: transparent;
-    transition: border-color var(--timing-function);
+    &:hover,
+    &:focus-within {
+        border-color: var(--accent-color);
+        outline: transparent;
+        transition: border-color var(--timing-function);
+    }
 }
 
 .register-form-agreement {

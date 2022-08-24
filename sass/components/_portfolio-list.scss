@@ -35,6 +35,15 @@
 .portfolio-item {
     position: relative;
     overflow: hidden;
+
+    &:hover .portfolio-item__overlay {
+            transform: translateY(0);
+        }
+    
+    &:focus .portfolio-item__overlay {
+            transform: translateY(0);
+        }
+        
 }
 
 .portfolio-item__image {
@@ -68,15 +77,6 @@
     margin: 0;
 }
 
-
-
-.portfolio-item:hover .portfolio-item__overlay {
-    transform: translateY(0);
-}
-
-.portfolio-item:focus .portfolio-item__overlay {
-    transform: translateY(0);
-}
 
 .portfolio-cardbox {
     box-sizing: border-box;

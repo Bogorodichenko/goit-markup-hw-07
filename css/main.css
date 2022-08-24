@@ -433,13 +433,16 @@ p {
   padding-bottom: 11px;
   padding-left: 42px;
 }
-
-.register-form__input:hover,
-.register-form__input:focus-within {
+.register-form__input:hover, .register-form__input:focus-within {
   border-color: var(--accent-color);
   outline: transparent;
   -webkit-transition: color var(--timing-function);
   transition: color var(--timing-function);
+}
+.register-form__input:hover + .register-form__icon, .register-form__input:focus-within + .register-form__icon {
+  fill: var(--accent-color);
+  -webkit-transition: fill var(--timing-function);
+  transition: fill var(--timing-function);
 }
 
 .register-form__icon {
@@ -451,13 +454,6 @@ p {
   height: 18px;
 }
 
-.register-form__input:hover + .register-form__icon,
-.register-form__input:focus-within + .register-form__icon {
-  fill: var(--accent-color);
-  -webkit-transition: fill var(--timing-function);
-  transition: fill var(--timing-function);
-}
-
 .register-form__comment {
   resize: none;
   height: 120px;
@@ -466,7 +462,6 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-
 .register-form__comment::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -474,7 +469,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register-form__comment::-moz-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -482,7 +476,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register-form__comment:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -490,7 +483,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register-form__comment::-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -498,7 +490,6 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .register-form__comment::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -506,9 +497,7 @@ p {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
-.register-form__comment:hover,
-.register-form__comment:focus-within {
+.register-form__comment:hover, .register-form__comment:focus-within {
   border-color: var(--accent-color);
   outline: transparent;
   -webkit-transition: border-color var(--timing-function);
@@ -916,10 +905,11 @@ p {
   -webkit-transition: border var(--timing-function);
   transition: border var(--timing-function);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
+}
+.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+  fill: var(--accent-color);
 }
 
 .clients__icon {
@@ -937,11 +927,6 @@ p {
   fill: #AFB1B8;
   -webkit-transition: fill var(--timing-function);
   transition: fill var(--timing-function);
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: var(--accent-color);
 }
 
 .subscription-form {
@@ -1099,6 +1084,14 @@ p {
   position: relative;
   overflow: hidden;
 }
+.portfolio-item:hover .portfolio-item__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.portfolio-item:focus .portfolio-item__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 
 .portfolio-item__image {
   display: block;
@@ -1131,16 +1124,6 @@ p {
   padding-right: 24px;
   padding-bottom: 64px;
   margin: 0;
-}
-
-.portfolio-item:hover .portfolio-item__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.portfolio-item:focus .portfolio-item__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .portfolio-cardbox {

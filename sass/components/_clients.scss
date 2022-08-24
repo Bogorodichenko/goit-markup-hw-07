@@ -19,11 +19,16 @@
     border-radius: 4px;
 
     transition: border var(--timing-function);
-}
 
-.clients__link:hover,
-.clients__link:focus {
-    border: 1px solid var(--accent-color);
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+        fill: var(--accent-color);
+    }
 }
 
 .clients__icon {
@@ -34,9 +39,4 @@
     height: 60px;
     fill: #AFB1B8;
     transition: fill var(--timing-function);
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-    fill: var(--accent-color);
 }
